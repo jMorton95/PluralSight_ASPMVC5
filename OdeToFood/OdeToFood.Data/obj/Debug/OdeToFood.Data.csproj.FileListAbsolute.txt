@@ -1,0 +1,6 @@
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.dll
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.pdb
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.AssemblyReference.cache
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.dll
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.pdb
