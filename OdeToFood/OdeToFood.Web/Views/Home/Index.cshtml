@@ -9,9 +9,21 @@
     <div>There are @Model.Count() numbers of restaurants in the database</div>
 </div>
 
-<ul>
-    @foreach (var restaurant in Model)
-    {
-        <li>@restaurant.Name</li>
-    }
-</ul>
+<main class="mainContainer">
+    <div class="left">
+        <ul>
+            @foreach (var restaurant in Model)
+            {
+                <li>@restaurant.Name</li>
+            }
+        </ul>
+    </div>
+    <div class="right">
+        <ul>
+            @foreach (var restaurant in Model)
+            {
+                <li> @restaurant.Cuisine</li>
+            }
+        </ul>
+    </div>
+</main>
