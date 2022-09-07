@@ -1,22 +1,26 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using Autofac.Integration.WebApi;
 using OdeToFood.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
+using System.Web.Http;
 using System.Web.Mvc;
 
 namespace OdeToFood.Web
 {
     public class ContainerConfig
     {
-        internal static void RegisterContainer()
+        internal static void RegisterContainer(HttpConfiguration httpConfiguration)
         {
             var builder = new ContainerBuilder();
 
             //sets RegisterControllers to scan our MvcApplication Assembly to find and register all our controllers.
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
             //Tells our builder to know about the InMemeryRestaurtantData and use it when someone needs something that implemenets IRestaurantData
             builder.RegisterType<InMemoryRestaurantData>()
                 .As<IRestaurantData>()
@@ -31,6 +35,10 @@ namespace OdeToFood.Web
 
             //This uses MVC's Dependency resolver to set itself to our AutofacDependencyResolver and passes in our Container
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            //Passes in a our instance of container as Autofacs Web API Dependency Resolver for use in our API.
+
+            //This will now work for all future API Controllers.
+            httpConfiguration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
     }
 }
