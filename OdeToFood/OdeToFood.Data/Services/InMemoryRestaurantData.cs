@@ -24,6 +24,11 @@ namespace OdeToFood.Data.Services
             
         }
 
+        public void Edit(Restaurant restaurant)
+        {
+            restaurants[restaurant.Id - 1] = restaurant;
+        }
+
         public Restaurant Get(int id)
         {
             //Search inside the DB for an entry that's ID matches the ID parameter passed, or return the first result.
