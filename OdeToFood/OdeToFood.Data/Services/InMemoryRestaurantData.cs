@@ -26,7 +26,6 @@ namespace OdeToFood.Data.Services
         public void Edit(Restaurant restaurant)
         {
             var dbRes = Get(restaurant.Id);
-
             if (dbRes != null)
             {  
                 dbRes.Name = restaurant.Name;
