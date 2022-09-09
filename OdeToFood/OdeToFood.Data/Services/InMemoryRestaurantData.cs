@@ -21,12 +21,17 @@ namespace OdeToFood.Data.Services
         {
             restaurant.Id = restaurants.Max(r => r.Id) + 1;
             restaurants.Add(restaurant);
-            
         }
 
         public void Edit(Restaurant restaurant)
         {
-            restaurants[restaurant.Id - 1] = restaurant;
+            var dbRes = Get(restaurant.Id);
+
+            if (dbRes != null)
+            {  
+                dbRes.Name = restaurant.Name;
+                dbRes.Cuisine = restaurant.Cuisine;
+            }
         }
 
         public Restaurant Get(int id)

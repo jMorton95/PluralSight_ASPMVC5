@@ -70,7 +70,7 @@ namespace OdeToFood.Web.Controllers
                 db.Edit(restaurant);
                 return RedirectToAction("Details", new { id = restaurant.Id });
             }
-            return View();
+            return View(restaurant);
         }
     }
 }
