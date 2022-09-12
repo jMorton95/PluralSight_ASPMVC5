@@ -105,3 +105,8 @@ C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood
 C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.xml
 C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.dll
 C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.xml
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\EntityFramework.dll
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\OdeToFood.Data.dll.config
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\EntityFramework.xml
+C:\Users\JoshMorton\Documents\MyWork\personalRepos\PluralSight_ASPMVC5\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.xml

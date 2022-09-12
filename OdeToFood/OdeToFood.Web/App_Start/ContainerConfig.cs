@@ -22,9 +22,10 @@ namespace OdeToFood.Web
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
             //Tells our builder to know about the InMemeryRestaurtantData and use it when someone needs something that implemenets IRestaurantData
-            builder.RegisterType<InMemoryRestaurantData>()
+            builder.RegisterType<SqlRestaurantData>()
                 .As<IRestaurantData>()
-                .SingleInstance(); //This will never work if we have multiple users.
+                .InstancePerRequest();
+            builder.RegisterType<OdeToFoodDbContext>().InstancePerRequest();
 
             //AutoFac now knows about that type, and use that type whenever somebody needs something about IRestaurantData, this also means that down the line
             //we can easily switch the reference to our database so that it knows how to handle the data we will be passing.

@@ -29,6 +29,15 @@ namespace OdeToFood.Data.Services
             entry.State = EntityState.Modified;
             db.SaveChanges();
         }
+        public void Delete(int id)
+        {
+            //uses DbContext Find method with our ID passed in.
+            var restaurant = db.Restaurants.Find(id);
+            //calls DbContext Remove method to remove our found result
+            db.Restaurants.Remove(restaurant);
+            //Saves
+            db.SaveChanges();
+        }
 
         public Restaurant Get(int id)
         {

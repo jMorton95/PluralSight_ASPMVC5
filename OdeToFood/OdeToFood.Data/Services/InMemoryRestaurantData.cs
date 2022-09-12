@@ -23,6 +23,15 @@ namespace OdeToFood.Data.Services
             restaurants.Add(restaurant);
         }
 
+        public void Delete(int id)
+        {
+            var restaurant = Get(id);
+            if (restaurant != null)
+            {
+                restaurants.Remove(restaurant);
+            }
+        }
+
         public void Edit(Restaurant restaurant)
         {
             var dbRes = Get(restaurant.Id);
@@ -43,5 +52,6 @@ namespace OdeToFood.Data.Services
         {
             return restaurants.OrderBy(r => r.Name);
         }
+
     }
 }
